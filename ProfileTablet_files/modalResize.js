@@ -5,18 +5,17 @@ function changeHeight() {
     array = document.getElementsByClassName('modal-body')
     for (let index = 0; index < array.length; index++) {
         let elemento = array[index]
+        elemento.classList.add("max-h100vh")
         elemento.style.height = (valorHeight - ((valorHeight * 0.03 * 2) + (50 * 2))) + "px"
-        elemento.classList.add("max-height-important")
     }
 
     //modal content
     array = document.getElementsByClassName('modal-content')
     for (let index = 0; index < array.length; index++) {
         let elemento = array[index]
-        elemento.style.maxHeight = valorHeight + "px"
+        elemento.classList.add("max-h100vh")
         elemento.style.marginTop = (valorHeight * 0.03) + "px"
         elemento.style.marginBottom = (valorHeight * 0.03) + "px"
-        elemento.classList.add("max-height-important")
     }
 
     //modal-header

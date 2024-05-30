@@ -11,10 +11,10 @@
   height: 50px !important;
 }
 
-#editProfile .modal-content.max-height-important {
+#editProfile .modal-content.max-h100vh {
   max-height: 100vh !important;
 }
 
-#editProfile .modal-body.max-height-important {
+#editProfile .modal-body.max-h100vh {
   max-height: 100vh !important;
 }
