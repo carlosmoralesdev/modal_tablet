@@ -39,6 +39,7 @@ function changeHeight() {
 }
 
 window.addEventListener("resize", changeHeight);
-//document.addEventListener("DOMContentLoaded", changeHeight);
 document.addEventListener("DOMContentLoaded", changeHeight);
 changeHeight()
+
+//document.addEventListener("DOMContentLoaded", changeHeight);
