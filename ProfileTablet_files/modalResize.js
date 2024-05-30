@@ -3,12 +3,13 @@ let resto = 100;
 function changeHeight() {
     let valorHeight = window.innerHeight
     let array = []
+    let nuevoValor = 0;
 
     array = document.getElementsByClassName('modal-body')
     for (let index = 0; index < array.length; index++) {
         let elemento = array[index]
         //elemento.classList.add("max-h100vh")
-        let nuevoValor = valorHeight - ((valorHeight * 0.03 * 2) + (50 * 2))
+        nuevoValor = valorHeight - ((valorHeight * 0.03 * 2) + (50 * 2))
         elemento.style.setProperty("height", "50px", "important")
         elemento.style.height = nuevoValor + "px"
     }
@@ -40,10 +41,11 @@ function changeHeight() {
 }
 
 window.addEventListener("resize", changeHeight);
-document.addEventListener("DOMContentLoaded", changeHeight);
+//document.addEventListener("DOMContentLoaded", changeHeight);
+document.addEventListener("load", changeHeight);
 changeHeight()
 
 window.addEventListener('load', function () {
     var navigationBarHeight = document.querySelector('.navigation-bar').clientHeight;
-    console.log('La altura de la barra de navegación superior es de ' + navigationBarHeight + 'px');
+    alert('La altura de la barra de navegación superior es de ' + navigationBarHeight + 'px');
 });
