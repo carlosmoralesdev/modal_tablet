@@ -24,7 +24,7 @@ function changeHeight() {
         if (!navigator.userAgent.toUpperCase().includes("IPAD")
             || !navigator.userAgent.toUpperCase().includes("TABLET")) {
             array = document.getElementsByClassName('modal-content')
-            for (let index = 0; index < array.length; index++) {
+            for (let index = 0; index < array.length; index++) { 
                 let elemento = array[index]
                 elemento.style.marginTop = (valorHeight * -0.05) + "px"
                 elemento.style.marginBottom = (valorHeight * 0.03) + "px"
