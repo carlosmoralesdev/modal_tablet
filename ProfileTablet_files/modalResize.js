@@ -6,7 +6,7 @@ function changeHeight() {
     for (let index = 0; index < array.length; index++) {
         let elemento = array[index]
         //elemento.classList.add("max-h100vh")
-        let nuevoValor = valorHeight - ((valorHeight * 0.03 * 2) + (50 * 2)) + 100
+        let nuevoValor = valorHeight - ((valorHeight * 0.03 * 2) + (50 * 2) + 100)
         alert("Nuevo valor: " + nuevoValor + "px")
         elemento.style.setProperty("height", "50px", "important")
         elemento.style.height = nuevoValor + "px"
