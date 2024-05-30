@@ -1,3 +1,5 @@
+let resto = 100;
+
 function changeHeight() {
     let valorHeight = window.innerHeight
     let array = []
@@ -40,3 +42,8 @@ function changeHeight() {
 window.addEventListener("resize", changeHeight);
 document.addEventListener("DOMContentLoaded", changeHeight);
 changeHeight()
+
+window.addEventListener('load', function () {
+    var navigationBarHeight = document.querySelector('.navigation-bar').clientHeight;
+    console.log('La altura de la barra de navegación superior es de ' + navigationBarHeight + 'px');
+});
