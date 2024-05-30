@@ -7,7 +7,7 @@ function changeHeight() {
     for (let index = 0; index < array.length; index++) {
         let elemento = array[index]
         //elemento.classList.add("max-h100vh")
-        nuevoValor = valorHeight - ((valorHeight * 0.03 * 2) + (50 * 2) + 200)
+        nuevoValor = valorHeight - ((valorHeight * 0.03 * 2) + (50 * 2) + 60)
         elemento.style.setProperty("height", "50px", "important")
         elemento.style.height = nuevoValor + "px"
     }
@@ -34,6 +34,13 @@ function changeHeight() {
     for (let index = 0; index < array.length; index++) {
         let elemento = array[index]
         elemento.style.setProperty("height", "50px", "important")
+    }
+
+    try{
+        let valor = document.querySelector('.navigation-bar').clientHeight
+        alert("Altura de la barra de navegacion del mobile: " + valor)
+    }catch(e){
+        alert(e)
     }
 
 }
