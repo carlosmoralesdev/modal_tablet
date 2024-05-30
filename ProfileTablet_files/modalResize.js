@@ -21,8 +21,8 @@ function changeHeight() {
         //alert("Body: " + nuevoValor + "px, content: " + valorHeight)
 
         //modal content
-        if (navigator.userAgent.toUpperCase().includes("IPAD")
-            || navigator.userAgent.toUpperCase().includes("TABLET")) {
+        if (!navigator.userAgent.toUpperCase().includes("IPAD")
+            || !navigator.userAgent.toUpperCase().includes("TABLET")) {
             array = document.getElementsByClassName('modal-content')
             for (let index = 0; index < array.length; index++) {
                 let elemento = array[index]
