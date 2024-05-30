@@ -44,8 +44,3 @@ window.addEventListener("resize", changeHeight);
 //document.addEventListener("DOMContentLoaded", changeHeight);
 document.addEventListener("load", changeHeight);
 changeHeight()
-
-/* window.addEventListener('load', function () {
-    var navigationBarHeight = document.querySelector('.navigation-bar').clientHeight;
-    alert('La altura de la barra de navegación superior es de ' + navigationBarHeight + 'px');
-}); */
