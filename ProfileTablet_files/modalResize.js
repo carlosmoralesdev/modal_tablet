@@ -6,14 +6,13 @@ function changeHeight() {
     for (let index = 0; index < array.length; index++) {
         let elemento = array[index]
         elemento.classList.add("max-h100vh")
-        elemento.style.height = (valorHeight - ((valorHeight * 0.03 * 2) + (50 * 2)) + 20) + "px"
+        elemento.style.height = (valorHeight - ((valorHeight * 0.03 * 2) + (50 * 2)) + 100) + "px"
     }
 
     //modal content
     array = document.getElementsByClassName('modal-content')
     for (let index = 0; index < array.length; index++) {
         let elemento = array[index]
-        elemento.classList.add("max-h100vh")
         elemento.style.marginTop = (valorHeight * 0.03) + "px"
         elemento.style.marginBottom = (valorHeight * 0.03) + "px"
     }
