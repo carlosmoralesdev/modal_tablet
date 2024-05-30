@@ -40,7 +40,7 @@ function changeHeight() {
         let valor = document.querySelector('.navigation-bar').clientHeight
         alert("Altura de la barra de navegacion del mobile: " + valor)
     }catch(e){
-        alert(e)
+        alert(e) 
     }
 
 }
