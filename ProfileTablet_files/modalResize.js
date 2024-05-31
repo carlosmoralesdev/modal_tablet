@@ -57,13 +57,15 @@ function changeHeight() {
 
                         let elementoInterno = elemento.childNodes[j]
                         console.log("elementoInterno: ", elementoInterno)
-                        if (elementoInterno.childNodes[1].classList.contains("modal-dialog")) {
+                        if (elementoInterno.childNodes) {
 
-                            console.log("modalDialog: ", elementoInterno.childNodes[1])
-                            let modalContent = elementoInterno.childNodes[1]
-                            if (modalContent) {
-                                modalContent.style.marginBottom = "";
-                                modalContent.style.setProperty("max-height", "90vh", "important")
+                            if (elementoInterno.childNodes[j].classList.contains("modal-dialog")) {
+                                console.log("modalDialog: ", elementoInterno.childNodes[1])
+                                let modalContent = elementoInterno.childNodes[1]
+                                if (modalContent) {
+                                    modalContent.style.marginBottom = "";
+                                    modalContent.style.setProperty("max-height", "90vh", "important")
+                                }
                             }
                         }
 
