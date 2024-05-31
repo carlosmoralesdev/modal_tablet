@@ -47,14 +47,19 @@ function changeHeight() {
 
         let divProductos = document.getElementById("uploadProduct")
         if (divProductos) {
+            console.log("divProductos ", divProductos)
             for (let i = 0; i < divProductos.childNodes.length; i++) {
                 let elemento = divProductos.childNodes[i]
                 if (elemento.id) {//si Posee un atributo id
+                    console.log("elemento ", elemento)
 
                     for (let j = 0; j < elemento.childNodes.length; j++) {
 
                         let elementoInterno = elemento.childNodes[j]
-                        if (elementoInterno.classList.contains("modal-dialog")) {
+                        console.log("elementoInterno: ", elementoInterno)
+                        if (elementoInterno.childNodes[1].classList.contains("modal-dialog")) {
+
+                            console.log("modalDialog: ", elementoInterno.childNodes[1])
                             let modalContent = elementoInterno.childNodes[1]
                             if (modalContent) {
                                 modalContent.style.marginBottom = "";
