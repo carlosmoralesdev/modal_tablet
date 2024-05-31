@@ -47,25 +47,37 @@ function changeHeight() {
 
         let divProductos = document.getElementById("uploadProduct")
         if (divProductos) {
-            console.log("divProductos ", divProductos)
+            //console.log("divProductos ", divProductos)
             for (let i = 0; i < divProductos.childNodes.length; i++) {
                 let elemento = divProductos.childNodes[i]
                 if (elemento.id) {//si Posee un atributo id
-                    console.log("elemento ", elemento)
+                    //console.log("elemento ", elemento)
 
                     for (let j = 0; j < elemento.childNodes.length; j++) {
 
                         let elementoInterno = elemento.childNodes[j]
-                        console.log("elementoInterno: ", elementoInterno)
-                        if (elementoInterno.childNodes) {
+                        //console.log("elementoInterno: ", elementoInterno)
+                        if (elementoInterno.childNodes.length > 0) {
 
-                            if (elementoInterno.childNodes[j].classList.contains("modal-dialog")) {
-                                console.log("modalDialog: ", elementoInterno.childNodes[1])
-                                let modalContent = elementoInterno.childNodes[1]
-                                if (modalContent) {
-                                    modalContent.style.marginBottom = "";
-                                    modalContent.style.setProperty("max-height", "90vh", "important")
+                            //console.log("--- tiene hijos ----")
+                            if (elementoInterno.childNodes[1]) {
+
+                                if (elementoInterno.childNodes[1].classList.contains("modal-content")
+                                    && elementoInterno.childNodes[1].tagName.toUpperCase() === "DIV") {
+                                    //console.log(" ----- modalDialog: -------- ", elementoInterno.childNodes[1])
+                                    let modalContent = elementoInterno.childNodes[1]
+                                    if (modalContent) {
+                                        console.log(modalContent)
+                                        modalContent.style.marginBottom = "";
+                                        modalContent.style.height = "";
+                                        modalContent.style.setProperty("max-height", "90vh", "important");
+                                        modalContent.childNodes[1].style.setProperty("height", "auto", "important");
+                                        document.getElementById("closeUpload").style.bottom = "auto";
+                                        document.getElementById("closeUpload").style.top = "18px";
+                                        break;//Sale del segundo ciclo
+                                    }
                                 }
+
                             }
                         }
 
