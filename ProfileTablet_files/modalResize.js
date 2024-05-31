@@ -24,7 +24,7 @@ function changeHeight() {
         if (!navigator.userAgent.toUpperCase().includes("IPAD")
             || !navigator.userAgent.toUpperCase().includes("TABLET")) {
             array = document.getElementsByClassName('modal-content')
-            for (let index = 0; index < array.length; index++) { 
+            for (let index = 0; index < array.length; index++) {
                 let elemento = array[index]
                 elemento.style.marginTop = (valorHeight * -0.05) + "px"
                 elemento.style.marginBottom = (valorHeight * 0.03) + "px"
@@ -45,6 +45,30 @@ function changeHeight() {
             elemento.style.setProperty("height", "50px", "important")
         }
 
+        let divProductos = document.getElementById("uploadProduct")
+        if (divProductos) {
+            for (let i = 0; i < divProductos.childNodes.length; i++) {
+                let elemento = divProductos.childNodes[i]
+                if (elemento.id) {//si Posee un atributo id
+
+                    for (let j = 0; j < elemento.childNodes.length; j++) {
+
+                        let elementoInterno = elemento.childNodes[j]
+                        if (elementoInterno.classList.contains("modal-dialog")) {
+                            let modalContent = elementoInterno.childNodes[1]
+                            if (modalContent) {
+                                modalContent.style.marginBottom = "";
+                                modalContent.style.setProperty("max-height", "90vh", "important")
+                            }
+                        }
+
+                    }
+
+
+                }
+            }
+        }
+
     }
 
 
@@ -54,5 +78,3 @@ function changeHeight() {
 window.addEventListener("resize", changeHeight);
 document.addEventListener("DOMContentLoaded", changeHeight);
 changeHeight()
-
-//document.addEventListener("DOMContentLoaded", changeHeight);

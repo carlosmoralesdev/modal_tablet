@@ -12,13 +12,12 @@
 	<link rel="stylesheet" href="ProfileTablet_files/homboo.css">
 	<!-- JavaScript Sheets -->
 	<script type="text/javascript" src="ProfileTablet_files/homboo.js"></script>
-	<script type="text/javascript" src="ProfileTablet_files/modalResize.js"></script>
 	
     	<meta name="robots" content="noindex">
     
  </head>
 
-<body class="controls-visible firefox yui3-skin-sam guest-site signed-in public-page site modal-open" style="overflow-y: scroll;">
+<body class="controls-visible other mobile yui3-skin-sam guest-site signed-in public-page site modal-open">
 
 
 
@@ -247,11 +246,11 @@
 		<!-- MODAL NOTIFICATIONS -->
 		<div id="notifications" class="modal notifications fade" role="dialog"><div id="_HeaderPortlet_WAR_HombooPortlets_:notificationsUser" class="modal-dialog">
 		    <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
+		    <div class="modal-content" style="margin-top: -44.8px; margin-bottom: 26.88px;">
+		      <div class="modal-header" style="height: 50px !important;">
 		        <div class="modal-title">Notifications</div>
 		      </div>
-		      <div class="modal-body">
+		      <div class="modal-body" style="height: 682.24px;">
 		        <div class="panel-notifications">
 		          <div class="notifications-body">         
 			            <ul>
@@ -261,12 +260,12 @@
 		          </div>
 		        </div>
 		      </div>
-		      <div class="modal-footer">
+		      <div class="modal-footer" style="height: 50px !important;">
 		      		<button type="button" class="btn btn-homboo-secondary" onclick="$('[id$=notifUpdateHeader]').click();">Close</button>		        
 		      </div>		      
 		    </div></div>
 		</div>
-<form data-senna-off="true" id="_HeaderPortlet_WAR_HombooPortlets_:headerForm" name="_HeaderPortlet_WAR_HombooPortlets_:headerForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=HeaderPortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=&amp;p_p_col_count=0&amp;_HeaderPortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fheader%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
+<form data-senna-off="true" id="_HeaderPortlet_WAR_HombooPortlets_:headerForm" name="_HeaderPortlet_WAR_HombooPortlets_:headerForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=HeaderPortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=&amp;p_p_col_count=0&amp;_HeaderPortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fheader%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="_HeaderPortlet_WAR_HombooPortlets_:headerForm" value="_HeaderPortlet_WAR_HombooPortlets_:headerForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=HeaderPortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=&amp;p_p_col_count=0&amp;_HeaderPortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_HeaderPortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fheader%2Fview.xhtml">
 
@@ -279,7 +278,7 @@
 			    </div>
 			
 			    <div class="homboo-toggle">
-			      <div class="open">
+			      <div>
 			        <span></span>
 			        <span></span>
 			        <span></span>
@@ -288,7 +287,32 @@
 			    </div>
 			
 			       
-			  <div class="user">
+			  </div>
+		    <div class="header-menu-responsive wrapper">		
+		      <div class="header-left-mobile">
+			        <div class="option-header-mobile"><a data-senna-off="true" id="_HeaderPortlet_WAR_HombooPortlets_:headerForm:logoutMobile" href="#" onclick="mojarra.ab(this,event,'action','@this','_HeaderPortlet_WAR_HombooPortlets_:headerForm');return false">Sign out</a>			        
+			        </div>
+			        <div class="option-header-mobile">
+			          <a href="https://dev.homboo.com/myhomboo/profile">My profile</a>
+			        </div><div id="_HeaderPortlet_WAR_HombooPortlets_:headerForm:notifUserMobile" class="option-header-mobile">
+				        <a href="javascript:$('#notifications').modal();" class="link-homboo-header link-multi">
+				          <div class="user-avatar"><span class="fa fa-bell"></span></div>
+								<div class="notifications-news-mobile"><span>2</span></div>
+								<script>
+								 $(document).ready(function() {
+									 zoneTimeUpdate(".formatZoneTimeHeader");
+								  });
+								</script>				          
+				        </a></div>		
+		        <div class="option-header-mobile sect-cart">
+				        <a href="https://dev.homboo.com/shoppingcart" class="link-homboo-header link-multi">
+				          <div>Cart<span id="_HeaderPortlet_WAR_HombooPortlets_:headerForm:cartItemsMobile" class="cart-cant">0</span></div>
+				          <div class="user-avatar"><span class="fa fa-shopping-cart"></span></div> 
+				        </a>
+		        </div>		
+		      </div>		
+		    </div>			  
+			  <div class="header-menu wrapper" style="display:none"><div class="user">
 			      <div class="user-option">
 			      	<div class="dropdown dropdown-sigin">
 					          <a class="link-homboo-header dropdown-toggle link-multi" data-toggle="dropdown">
@@ -317,32 +341,7 @@
 				          <div class="user-avatar"><span class="fa fa-shopping-cart"></span></div> 
 				        </a><input id="_HeaderPortlet_WAR_HombooPortlets_:headerForm:cartUpdateHeader" type="submit" name="_HeaderPortlet_WAR_HombooPortlets_:headerForm:cartUpdateHeader" value="" style="display: none;" onclick="mojarra.ab(this,event,'action','@this','_HeaderPortlet_WAR_HombooPortlets_:headerForm:cartItems _HeaderPortlet_WAR_HombooPortlets_:headerForm:cartItemsMobile',{'onevent':completeAjax});return false">			      
 			      </div> 
-			    </div></div>
-		    <div class="header-menu-responsive wrapper">		
-		      <div class="header-left-mobile">
-			        <div class="option-header-mobile"><a data-senna-off="true" id="_HeaderPortlet_WAR_HombooPortlets_:headerForm:logoutMobile" href="#" onclick="mojarra.ab(this,event,'action','@this','_HeaderPortlet_WAR_HombooPortlets_:headerForm');return false">Sign out</a>			        
-			        </div>
-			        <div class="option-header-mobile">
-			          <a href="https://dev.homboo.com/myhomboo/profile">My profile</a>
-			        </div><div id="_HeaderPortlet_WAR_HombooPortlets_:headerForm:notifUserMobile" class="option-header-mobile">
-				        <a href="javascript:$('#notifications').modal();" class="link-homboo-header link-multi">
-				          <div class="user-avatar"><span class="fa fa-bell"></span></div>
-								<div class="notifications-news-mobile"><span>2</span></div>
-								<script>
-								 $(document).ready(function() {
-									 zoneTimeUpdate(".formatZoneTimeHeader");
-								  });
-								</script>				          
-				        </a></div>		
-		        <div class="option-header-mobile sect-cart">
-				        <a href="https://dev.homboo.com/shoppingcart" class="link-homboo-header link-multi">
-				          <div>Cart<span id="_HeaderPortlet_WAR_HombooPortlets_:headerForm:cartItemsMobile" class="cart-cant">0</span></div>
-				          <div class="user-avatar"><span class="fa fa-shopping-cart"></span></div> 
-				        </a>
-		        </div>		
-		      </div>		
-		    </div>			  
-			  <div class="header-menu wrapper" style="">
+			    </div>
 			    <div class="header-menu-options">
 			    	<div class="option-header-left">
 				      <div class="option-header">
@@ -381,7 +380,7 @@
 				    </div>
 			    </div>
 			  </div>
-			</header><input type="hidden" name="javax.faces.ViewState" id="_HeaderPortlet_WAR_HombooPortlets_:javax.faces.ViewState:0" value="7008947826122709305:6613794460131294849" autocomplete="off">
+			</header><input type="hidden" name="javax.faces.ViewState" id="_HeaderPortlet_WAR_HombooPortlets_:javax.faces.ViewState:0" value="-4325817302862172468:6938930188035309308" autocomplete="off">
 </form></div>
 
 	
@@ -764,14 +763,14 @@
 
 <!-- MODAL EDIT PHOTO PROFILE -->
 <div id="editPhotoProfile" class="modal editPhotoProfile fade" role="dialog">
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="multipart/form-data">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="multipart/form-data">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm" value="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 
   <div class="modal-dialog">  
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
+    <div class="modal-content" style="margin-top: -44.8px; margin-bottom: 26.88px;">
+      <div class="modal-header" style="height: 50px !important;">
         <div class="modal-title">Profile photo</div><div id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:divInformationAvatar"><label id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:msgBlockAvatar" style="color: red;"></label></div>        
         <button type="button" id="closeCrop" class="close" data-dismiss="modal">×</button>
       </div>
@@ -785,7 +784,7 @@
 			});				
 		});				
 	  </script> 
-	  <div class="modal-body">
+	  <div class="modal-body" style="height: 682.24px;">
 	  	<div class="panel-crop-avatar croppie-container"><div class="cr-boundary" aria-dropeffect="none" style="width: 100%; height: 400px;"><canvas class="cr-image" alt="preview" aria-grabbed="false" width="963" height="1920"></canvas><div class="cr-viewport cr-vp-circle" style="width: 300px; height: 300px;" tabindex="0"></div><div class="cr-overlay"></div></div><div class="cr-slider-wrap"><div class="cr-slider-title-value"><div class="cr-slider-title">Zoom</div><div class="cr-slider-value">0</div></div><input class="rangeSlider" type="range" step="0.0001" aria-label="zoom" value="1"></div></div>
 	  </div><span id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:divCroppLoad"><input id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:dataImgCrop" type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:dataImgCrop"><input id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:dataImgAvatar" type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:dataImgAvatar" value="https://dev.homboo.com/media/ImageAvatar_4_6279107136.webp">
 			<script>
@@ -795,26 +794,26 @@
 					});
 				});				
 			</script></span>	      
-      <div class="modal-footer"><input id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:uploadAvatar" type="file" name="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:uploadAvatar" style="display: none" onchange="jsf.util.chain(this,event,'return validateUploadImages($(\'[id$=uploadAvatar]\'), $(\'[id$=msgBlockAvatar]\'), event)','mojarra.ab(this,event,\'valueChange\',0,\'_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:divCroppLoad _ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:divApplyCropp _ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:divInformationAvatar\')')" accept="image/*">
+      <div class="modal-footer" style="height: 50px !important;"><input id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:uploadAvatar" type="file" name="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:uploadAvatar" style="display: none" onchange="jsf.util.chain(this,event,'return validateUploadImages($(\'[id$=uploadAvatar]\'), $(\'[id$=msgBlockAvatar]\'), event)','mojarra.ab(this,event,\'valueChange\',0,\'_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:divCroppLoad _ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:divApplyCropp _ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:divInformationAvatar\')')" accept="image/*">
         <button class="btn btn-homboo" id="cropImgButton" type="button" style="display: none"></button><input id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:savedCrop" type="submit" name="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:savedCrop" value="Save crop" style="display: none" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:dataImgCrop','profileForm _ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:divInformationAvatar uploadProfileForm',{'onevent':completeAjax});return false">        
         <button class="btn btn-homboo-secondary changeAvatar" type="button" onclick="$('[id$=uploadAvatar]').click();">Change Photo</button><span id="_ProfilePortlet_WAR_HombooPortlets_:avatarProfileForm:divApplyCropp">
 	         	<button class="btn btn-homboo" type="button" onclick="$('#cropImgButton').click();">Apply</button></span>
       </div>      
     </div>
-  </div><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:0" value="-5515167390973544451:-3706331193422228980" autocomplete="off">
+  </div><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:0" value="3058580939422643321:1040899237243602538" autocomplete="off">
 </form>
 </div>
 
 
 <!-- MODAL EDIT PROFILE -->
-<div id="editProfile" class="modal editProfile fade in" role="dialog" style="z-index: 1040; display: block;">
+<div id="editProfile" class="modal editProfile fade" role="dialog">
   <div class="modal-dialog">  
     <!-- Modal content-->
-    <div class="modal-content">      
-      <div class="modal-header">
+    <div class="modal-content" style="margin-top: -44.8px; margin-bottom: 26.88px;">      
+      <div class="modal-header" style="height: 50px !important;">
         <div class="modal-title">Edit your profile</div>        
         <button type="button" class="close" data-dismiss="modal">×</button>
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:messageProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:messageProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:messageProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:messageProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:messageProfileForm" value="_ProfilePortlet_WAR_HombooPortlets_:messageProfileForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 
@@ -826,11 +825,11 @@
 					 requiredFields($('[id$=sellerProfileForm]'),$('[id$=msgBlock]'));
 					 requiredFields($('[id$=pwdProfileForm]'),$('[id$=msgBlock]'));
 				});
-			</script>
-<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-5515167390973544451:-3706331193422228980" autocomplete="off"></form>
+			</script><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:1" value="3058580939422643321:1040899237243602538" autocomplete="off">
+</form>
       </div>
-      <div class="modal-body">
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="multipart/form-data">
+      <div class="modal-body" style="height: 682.24px;">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="multipart/form-data">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProfileForm" value="_ProfilePortlet_WAR_HombooPortlets_:uploadProfileForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 <input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProfileForm:uploadProfile" type="file" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProfileForm:uploadProfile" class="" style="display: none" onchange="jsf.util.chain(this,event,'return validateUploadImages($(\'[id$=uploadProfile]\'), $(\'[id$=msgBlock]\'), event)','mojarra.ab(this,event,\'valueChange\',\'@this\',\'_ProfilePortlet_WAR_HombooPortlets_:uploadProfileForm profileForm:divBannerProfileAll\')')" accept="image/*"> 
@@ -854,7 +853,7 @@
 	              </div>
 	            </div></a>            
           </div>
-        </div><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:2" value="-5515167390973544451:-3706331193422228980" autocomplete="off">
+        </div><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:2" value="3058580939422643321:1040899237243602538" autocomplete="off">
 </form>      
         <div class="profile-information">
         	<div>        	
@@ -867,7 +866,7 @@
 			  <!-- Tab panes -->
 			  <div id="tab-profile-content" class="tab-content">
 			  		<div role="tabpanel" class="tab-pane fade in active" id="general" style="">
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm" value="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 <div id="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm:divProfilePersonal">
@@ -886,11 +885,11 @@ construction, and other statistics. The data are from the Survey of
 Construction (SOC), which is partially funded by the Department of 
 Housing and Urban Development (HUD).</textarea>							 					
 				          </div>				
-				       </div></div><input id="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm:saveProfile" type="submit" name="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm:saveProfile" value="Save Profile" style="display:none;" class="btn btn-homboo" onclick="jsf.util.chain(this,event,'return checkForm($(\'[id$=generalProfileForm]\'), $(\'[id$=msgBlock]\'), event)','mojarra.ab(this,event,\'action\',\'@this _ProfilePortlet_WAR_HombooPortlets_:generalProfileForm\',\'_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm profileForm:divBannerProfileAll _ProfilePortlet_WAR_HombooPortlets_:messageProfileForm productsForm:profileDescription divSendProfile\')');return false">
-<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-5515167390973544451:-3706331193422228980" autocomplete="off"></form>				  
+				       </div></div><input id="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm:saveProfile" type="submit" name="_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm:saveProfile" value="Save Profile" style="display:none;" class="btn btn-homboo" onclick="jsf.util.chain(this,event,'return checkForm($(\'[id$=generalProfileForm]\'), $(\'[id$=msgBlock]\'), event)','mojarra.ab(this,event,\'action\',\'@this _ProfilePortlet_WAR_HombooPortlets_:generalProfileForm\',\'_ProfilePortlet_WAR_HombooPortlets_:generalProfileForm profileForm:divBannerProfileAll _ProfilePortlet_WAR_HombooPortlets_:messageProfileForm productsForm:profileDescription divSendProfile\')');return false"><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:3" value="3058580939422643321:1040899237243602538" autocomplete="off">
+</form>				  
 			  		</div>
 				  		<div role="tabpanel" class="tab-pane" id="sellerAccount" style="display: none;">
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:sellerProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:sellerProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:sellerProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:sellerProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:sellerProfileForm" value="_ProfilePortlet_WAR_HombooPortlets_:sellerProfileForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 <div id="_ProfilePortlet_WAR_HombooPortlets_:sellerProfileForm:divProfileSellerAccount">
@@ -1232,11 +1231,11 @@ Housing and Urban Development (HUD).</textarea>
 									<div class="input-multi">
 										<div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:sellerProfileForm:phoneAddr">Phone #</label><input id="_ProfilePortlet_WAR_HombooPortlets_:sellerProfileForm:phoneAddr" type="text" name="_ProfilePortlet_WAR_HombooPortlets_:sellerProfileForm:phoneAddr" value="7864488824" class="form-control" title="Phone #" placeholder="* Phone #" required="required">							
 										</div>
-									</div></div>
-<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-5515167390973544451:-3706331193422228980" autocomplete="off"></form>				  			
+									</div></div><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:4" value="3058580939422643321:1040899237243602538" autocomplete="off">
+</form>				  			
 				  		</div>
 			  		<div role="tabpanel" class="tab-pane" id="changePassword" style="display: none;">
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:pwdProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:pwdProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:pwdProfileForm" name="_ProfilePortlet_WAR_HombooPortlets_:pwdProfileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:pwdProfileForm" value="_ProfilePortlet_WAR_HombooPortlets_:pwdProfileForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 <div id="_ProfilePortlet_WAR_HombooPortlets_:pwdProfileForm:divProfilePassword">
@@ -1253,14 +1252,14 @@ Housing and Urban Development (HUD).</textarea>
 							$(document).ready(function() {	
 								 tabValidate("tab-profile", "tab-profile-content");
 							});
-						</script>
-<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-5515167390973544451:-3706331193422228980" autocomplete="off"></form>			  
+						</script><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:5" value="3058580939422643321:1040899237243602538" autocomplete="off">
+</form>			  
 			  		</div>			  		
 			  </div>        	
         	</div>		  
         </div>	    
       </div>
-      <div class="modal-footer">        
+      <div class="modal-footer" style="height: 50px !important;">        
      		<button class="btn btn-homboo-secondary" data-dismiss="modal">Close</button>
 				<button id="saveProfileLink" class="btn btn-homboo" onclick="$('[id$=saveProfile]').click()">Save Profile</button>
      		<button id="changePasswordLink" class="btn btn-homboo" onclick="$('[id$=savePassword]').click()" style="display:none;">Change Password</button><div id="_ProfilePortlet_WAR_HombooPortlets_:divSendProfile" style="margin-left: 5px;"></div>
@@ -1270,7 +1269,7 @@ Housing and Urban Development (HUD).</textarea>
 </div>
 
 <section align="center" class="container-fluid wrapper">
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:profileForm" name="_ProfilePortlet_WAR_HombooPortlets_:profileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded" onkeypress="if (event.keyCode == 13) {return false; }">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:profileForm" name="_ProfilePortlet_WAR_HombooPortlets_:profileForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded" onkeypress="if (event.keyCode == 13) {return false; }">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:profileForm" value="_ProfilePortlet_WAR_HombooPortlets_:profileForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 
@@ -1278,7 +1277,30 @@ Housing and Urban Development (HUD).</textarea>
 		$(document).ready(function() {
 			modal_multi();	
 		});
-	</script><span id="_ProfilePortlet_WAR_HombooPortlets_:profileForm:divStatusProfile"></span><div id="_ProfilePortlet_WAR_HombooPortlets_:profileForm:divBannerProfileAll" class="col-sm-12" style="margin-bottom:10px;padding:0px;"> 
+	</script><span id="_ProfilePortlet_WAR_HombooPortlets_:profileForm:divStatusProfile">
+			<!-- MODAL APPROVED -->
+			<div id="approvedProfile" class="modal messageModal fade" role="dialog" style="z-index: 1040; display: none;">
+			  <div class="modal-dialog">
+			
+			    <!-- Modal content-->
+			    <div class="modal-content" style="margin-top: -44.8px; margin-bottom: 26.88px;">
+			      <div class="modal-header" style="height: 50px !important;">
+			        <div class="modal-title">Approved Profile</div>
+			      </div>
+			      <div class="modal-body" style="height: 682.24px;">
+			        <strong>Congratulations!</strong>
+			        <p class="marginTop10">Your profile has been validated by our team and is now ready to use. You can now upload projects to your profile!</p>
+			      </div>
+			      <div class="modal-footer" style="height: 50px !important;"><input id="_ProfilePortlet_WAR_HombooPortlets_:profileForm:approved" type="submit" name="_ProfilePortlet_WAR_HombooPortlets_:profileForm:approved" value="Accept" class="btn btn-homboo" onclick="mojarra.ab(this,event,'action','@this',0,{'onevent':completeAjax});return false">			      
+			      </div>
+			    </div>
+			  </div>
+			</div>	  
+			<script>
+				$(document).ready(function() {
+					$("#approvedProfile").modal();
+				});
+			</script></span><div id="_ProfilePortlet_WAR_HombooPortlets_:profileForm:divBannerProfileAll" class="col-sm-12" style="margin-bottom:10px;padding:0px;"> 
   <input type="hidden" id="readAjaxScreen" name="readAjaxScreen" value="0"> 
     <div class="panel panel-profile center">
 		<div class="panel-title profile-background img-homboo" id="profile">
@@ -1290,7 +1312,7 @@ Housing and Urban Development (HUD).</textarea>
 		          <div class="presentation-profile">
 		            <div class="profile-options">
 		              <div class="options">
-		                <div class="options-body"><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:profileForm:j_idt151" href="#" onclick="mojarra.ab(this,event,'action','@this','generalProfileForm sellerProfileForm pwdProfileForm _ProfilePortlet_WAR_HombooPortlets_:messageProfileForm');return false" data-target="#editProfile" data-toggle="modal" name="_ProfilePortlet_WAR_HombooPortlets_:profileForm:j_idt151">
+		                <div class="options-body"><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:profileForm:j_idt151" href="#" onclick="mojarra.ab(this,event,'action','@this','generalProfileForm sellerProfileForm pwdProfileForm _ProfilePortlet_WAR_HombooPortlets_:messageProfileForm');return false" data-target="#editProfile" data-toggle="modal">
 			                    <div class="options-circle" data-toggle="tooltip" data-placement="top" data-container="#profile" title="" data-original-title="Edit Profile">
 			                      <span class="fa fa-pencil"></span>
 			                    </div></a>		                  
@@ -1310,40 +1332,40 @@ Housing and Urban Development (HUD).</textarea>
 		$(document).ready(function() {
 			$('[data-toggle="tooltip"]').tooltip();
 		});
-	</script></div><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:6" value="-5515167390973544451:-3706331193422228980" autocomplete="off">
+	</script></div><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:6" value="3058580939422643321:1040899237243602538" autocomplete="off">
 </form>
 
 <!-- MODAL DELETE PROJECT -->
 <div id="deleteProduct" class="modal messageModal fade" role="dialog">
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:deleteProductForm" name="_ProfilePortlet_WAR_HombooPortlets_:deleteProductForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:deleteProductForm" name="_ProfilePortlet_WAR_HombooPortlets_:deleteProductForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:deleteProductForm" value="_ProfilePortlet_WAR_HombooPortlets_:deleteProductForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 
   <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
+    <div class="modal-content" style="margin-top: -44.8px; margin-bottom: 26.88px;">
+      <div class="modal-header" style="height: 50px !important;">
         <div class="modal-title">Delete your project</div>
         <button type="button" class="close" data-dismiss="modal">×</button>
-      </div><div id="_ProfilePortlet_WAR_HombooPortlets_:deleteProductForm:modalDeleteProject" class="modal-body">
+      </div><div id="_ProfilePortlet_WAR_HombooPortlets_:deleteProductForm:modalDeleteProject" class="modal-body" style="height: 682.24px;">
         <p>Are you sure you want to delete your project?</p><input id="_ProfilePortlet_WAR_HombooPortlets_:deleteProductForm:removeProduct" type="submit" name="_ProfilePortlet_WAR_HombooPortlets_:deleteProductForm:removeProduct" value="Delete Project" class="btn btn-homboo" onclick="mojarra.ab(this,event,'action','@this','_ProfilePortlet_WAR_HombooPortlets_:productsForm',{'onevent':completeAjax});return false"></div>
     </div>
-  </div><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:7" value="-5515167390973544451:-3706331193422228980" autocomplete="off">
+  </div><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:7" value="3058580939422643321:1040899237243602538" autocomplete="off">
 </form>
 </div>
 
 <!-- MODAL TERMS -->
-<div id="termArchitect" class="modal messageBigModal fade" role="dialog">
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:termsForm" name="_ProfilePortlet_WAR_HombooPortlets_:termsForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
+<div id="termArchitect" class="modal messageBigModal fade" role="dialog" style="z-index: 1040; display: none;">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:termsForm" name="_ProfilePortlet_WAR_HombooPortlets_:termsForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:termsForm" value="_ProfilePortlet_WAR_HombooPortlets_:termsForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 
   <div class="modal-dialog">
-    <!-- Modal content--><div id="_ProfilePortlet_WAR_HombooPortlets_:termsForm:termsProduct" class="modal-content">
-      <div class="modal-header">
+    <div id="_ProfilePortlet_WAR_HombooPortlets_:termsForm:termsProduct" class="modal-content" style="margin-top: -44.8px; margin-bottom: 26.88px;">
+      <div class="modal-header" style="height: 50px !important;">
         <div class="modal-title">Architect's Terms and Conditions</div>
         <button type="button" class="close" data-dismiss="modal">×</button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" style="height: 682.24px;">
           <div class="news_article" style="border-bottom:none;padding-left:0px;padding-right:0px">
             <div class="title-principal text-left marginBottom50">Architect's Terms and Conditions For The Use of Homboo's Services</div>
             <div class="news_article-text">
@@ -1908,26 +1930,25 @@ Policy will be deemed the final and integrated agreement between you and
           </div>          
 
 
-        <div class="input-action-with-text" style="padding-top:40px;padding-bottom: 30px;display: flex; justify-content: center;"><input id="_ProfilePortlet_WAR_HombooPortlets_:termsForm:accepTerms" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:termsForm:accepTerms" class="accept_terms" onclick="mojarra.ab(this,event,'valueChange','@this','@this _ProfilePortlet_WAR_HombooPortlets_:termsForm:btnTerms')"><label for="_ProfilePortlet_WAR_HombooPortlets_:termsForm:accepTerms"><span></span> Accept the terms and conditions</label>  
+        <div class="input-action-with-text" style="padding-top:40px;padding-bottom: 30px;display: flex; justify-content: center;"><input id="_ProfilePortlet_WAR_HombooPortlets_:termsForm:accepTerms" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:termsForm:accepTerms" class="accept_terms" onclick="mojarra.ab(this,event,'valueChange','@this','@this _ProfilePortlet_WAR_HombooPortlets_:termsForm:btnTerms')" checked="checked"><label for="_ProfilePortlet_WAR_HombooPortlets_:termsForm:accepTerms"><span></span> Accept the terms and conditions</label>  
         </div>
       </div>
-      <div class="modal-footer">
-        <button class="btn btn-homboo-secondary" data-dismiss="modal">Cancel</button><div id="_ProfilePortlet_WAR_HombooPortlets_:termsForm:btnTerms" class="termArchitect-accept" style="margin-left: 5px">
-				<button class="btn btn-homboo disabled" type="button" onclick="">Accept</button></div>
+      <div class="modal-footer" style="height: 50px !important;">
+        <button class="btn btn-homboo-secondary" data-dismiss="modal">Cancel</button><div id="_ProfilePortlet_WAR_HombooPortlets_:termsForm:btnTerms" class="termArchitect-accept" style="margin-left: 5px"><input id="_ProfilePortlet_WAR_HombooPortlets_:termsForm:openAddProduct" type="submit" name="_ProfilePortlet_WAR_HombooPortlets_:termsForm:openAddProduct" value="Accept" class="btn btn-homboo" onclick="mojarra.ab(this,event,'action','@this','@this uploadProductForm',{'onevent':completeAjax});return false"></div>
       </div></div>
-  </div><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:8" value="-5515167390973544451:-3706331193422228980" autocomplete="off">
-</form>
+  </div>
+<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="3058580939422643321:1040899237243602538" autocomplete="off"></form>
 </div>
 
 <!-- MODAL UPLOAD PRODUCT -->
-<div id="uploadProduct" class="modal uploadProject fade" role="dialog">
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="multipart/form-data" onkeypress="if (event.keyCode == 13) {return false; }">
+<div id="uploadProduct" class="modal uploadProject fade in" role="dialog" style="z-index: 1060; display: block;">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="multipart/form-data" onkeypress="if (event.keyCode == 13) {return false; }">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm" value="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 
   <div class="modal-dialog">
-    <!-- Modal content--><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:modalContentProduct" class="modal-content" style="position: relative;" aria-busy="false">
-      <div class="modal-header modal-header-options">        
+    <div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:modalContentProduct" class="modal-content" style="position: relative; margin-top: -44.8px; margin-bottom: 26.88px;" aria-busy="false">
+      <div class="modal-header modal-header-options" style="height: 50px !important;">        
         <div class="modal-title" style="width: 100%;">
         <div style="padding-bottom: 5px;">Add your project</div><label id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:msgProduct" class="ui-outputlabel ui-widget" style="color: red;"></label>
 		    <div class="stepwizard">
@@ -1986,19 +2007,28 @@ Policy will be deemed the final and integrated agreement between you and
         </div>
         <button type="button" id="closeUpload" class="close" data-dismiss="modal">×</button>
       </div>
-      <div class="modal-body"> 
+      <div class="modal-body" style="height: 682.24px;"> 
         <div class="setup-content" id="step-1" style="">
 			  <div class="title-subsection">General</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step1">
 			  <div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productName">Project name</label><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productName" type="text" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productName" autocomplete="off" class="form-control" title="Project name" placeholder="* Project name" autofocus="true" required="required">				  
 			  </div>
-			  <div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:houseStyle">Project Style</label><div class="btn-group bootstrap-select form-control stateSelect dropdownHB"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:houseStyle" title="* Select style"><span class="filter-option pull-left">* Select style</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"></ul></div><select id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:houseStyle" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:houseStyle" class="selectpicker form-control stateSelect dropdownHB" size="1" title="* Select style" data-size="10" required="required" tabindex="-98"><option class="bs-title-option" value="" selected="selected">* Select style</option></select></div>
+			  <div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:houseStyle">Project Style</label><div class="btn-group bootstrap-select form-control stateSelect dropdownHB"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:houseStyle" title="* Select style"><span class="filter-option pull-left">* Select style</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Contemporary</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Industrial</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Minimalist</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Modern</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Modern Traditional</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Modern Farm House</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Modern House Glass</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Modern Ranch</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:houseStyle" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:houseStyle" class="selectpicker form-control stateSelect dropdownHB" size="1" title="* Select style" data-size="10" required="required" tabindex="-98"><option class="bs-title-option" value="" selected="selected">* Select style</option>	<option value="CON">Contemporary</option>
+	<option value="IND">Industrial</option>
+	<option value="MIN">Minimalist</option>
+	<option value="MOD">Modern</option>
+	<option value="MT">Modern Traditional</option>
+	<option value="MFH">Modern Farm House</option>
+	<option value="MHG">Modern House Glass</option>
+	<option value="MR">Modern Ranch</option>
+</select></div>
 			  </div>
 			  <div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productDescription">Project Description</label><textarea id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productDescription" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productDescription" class="form-control" title="Project Description" placeholder="* - Please Specify -" required="required"></textarea>
 			  </div></div>             
         </div>
         <div class="setup-content" id="step-2" style="display: none;">
 			<div class="title-subsection">Documentation info</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step2">	
-			<div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productLanguage">Language</label><div class="btn-group bootstrap-select form-control stateSelect dropdownHB"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productLanguage" title="* Select Language"><span class="filter-option pull-left">* Select Language</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"></ul></div><select id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productLanguage" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productLanguage" class="selectpicker form-control stateSelect dropdownHB" size="1" title="* Select Language" required="required" tabindex="-98"><option class="bs-title-option" value="" selected="selected">* Select Language</option></select></div>			       
+			<div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productLanguage">Language</label><div class="btn-group bootstrap-select form-control stateSelect dropdownHB"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productLanguage" title="* Select Language"><span class="filter-option pull-left">* Select Language</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">English</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productLanguage" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:productLanguage" class="selectpicker form-control stateSelect dropdownHB" size="1" title="* Select Language" required="required" tabindex="-98"><option class="bs-title-option" value="" selected="selected">* Select Language</option>	<option value="EN">English</option>
+</select></div>			       
 			</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:divUnits" class="form-group input"><label>Units (measurement system)</label>
 					<div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_imperial" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_imperial" class="levels" onclick="mojarra.ab(this,event,'valueChange','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:divUnits _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step8 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step12 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step13')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_imperial"><span></span> Imperial (ft)</label> 
 					</div>	       
@@ -2009,10 +2039,24 @@ Policy will be deemed the final and integrated agreement between you and
         </div>
         <div class="setup-content" id="step-3" style="display: none;">
 			<div class="title-subsection">Levels</div>		
-			<div class="description-subsection">Select all the levels you will be including for your project</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step3"></div>
+			<div class="description-subsection">Select all the levels you will be including for your project</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step3">
+				<div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_0" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_0" class="levels level_-1" onclick="mojarra.ab(this,event,'valueChange','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step8')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_0"><span></span> Lower Floor / Basement</label>
+				</div>
+				<div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_1" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_1" checked="checked" class="levels level_0" onclick="mojarra.ab(this,event,'valueChange','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step8')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_1"><span></span> Main Floor</label>
+				</div>
+				<div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_2" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_2" class="levels level_1" onclick="mojarra.ab(this,event,'valueChange','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step8')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_2"><span></span> Upper Floor</label>
+				</div>
+				<div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_3" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_3" class="levels level_2" onclick="mojarra.ab(this,event,'valueChange','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step8')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_3"><span></span> Other Floor</label>
+				</div>
+				<div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_4" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_4" class="levels level_3" onclick="mojarra.ab(this,event,'valueChange','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step8')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:option_level_4"><span></span> Bonus Floor</label>
+				</div></div>
         </div>
         <div class="setup-content" id="step-4" style="display: none;">
-			<div class="title-subsection">Basic Features - Dimensions</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4">
+			<div class="title-subsection">Basic Features - Dimensions</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step4">	
+				<div class="dimensions-data">
+					<div class="form-group input" style="width: 100% !important;"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:levelsDimensions:0:projectDescription_0">Description</label><textarea id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:levelsDimensions:0:projectDescription_" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:levelsDimensions:0:projectDescription_" class="form-control" rows="4" title="Description" placeholder="Add level description (spatial quality, room configuration, heights etc)"></textarea>
+					</div>
+				</div>
 			<script>
 				$(document).ready(function() {
 					$('.metric-mask').mask("#,##0", {reverse: true}); 
@@ -2022,7 +2066,65 @@ Policy will be deemed the final and integrated agreement between you and
 			</script></div>
         </div>
 		<div class="setup-content" id="step-5" style="display: none;">
-			<div class="title-subsection">Spatial Features</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5" class="data-table">
+			<div class="title-subsection">Spatial Features</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5" class="data-table"><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:0:panelSF" class="row-hb primary start-space-between primary">
+			    <div class="top height-input-width-align-center">
+			      <div class="input-action-with-text">
+			        	<div class="input-text">Bedrooms</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:0:divTop" class="input-action">
+				        		<span class="fa fa-minus circle action-minus-step" aria-hidden="true"></span>
+			            <span class="cant action action-min">1</span><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:0:plusSF" href="#" style="color:black;" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5');return false">
+							<span class="fa fa-plus circle action-plus-step" aria-hidden="true"></span></a></div>
+			      </div>
+			    </div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:0:divWL" class="bottom width-static content-copy" style="">
+				      <div class="row-hb-min cell-separate-bottom other-sf-item">		  	      
+				        <div>
+				        		<a class="close remove-item-min">×</a>				        
+				        </div>
+				      </div></div></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:1:panelSF" class="row-hb primary start-space-between primary">
+			    <div class="top height-input-width-align-center">
+			      <div class="input-action-with-text">
+			        	<div class="input-text">Bathrooms</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:1:divTop" class="input-action">
+				        		<span class="fa fa-minus circle action-minus-step" aria-hidden="true"></span>
+			            <span class="cant action action-min">1.0</span><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:1:plusSF" href="#" style="color:black;" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5');return false">
+							<span class="fa fa-plus circle action-plus-step" aria-hidden="true"></span></a></div>
+			      </div>
+			    </div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:1:divWL" class="bottom width-static content-copy" style="">
+				      <div class="row-hb-min cell-separate-bottom other-sf-item">		  	      
+				        <div>
+				        		<a class="close remove-item-min">×</a>				        
+				        </div>
+				      </div></div></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:3:panelSF" class="row-hb primary start-space-between primary">
+			    <div class="top height-input-width-align-center">
+			      <div class="input-action-with-text">
+			        	<div class="input-text">Kitchen</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:3:divTop" class="input-action">
+			        		<span class="fa fa-minus circle action-minus-step" aria-hidden="true"></span>
+			            <span class="cant action action-min">0</span><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:3:plusSF" href="#" style="color:black;" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5');return false">
+							<span class="fa fa-plus circle action-plus-step" aria-hidden="true"></span></a></div>
+			      </div>
+			    </div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:3:divWL" class="bottom width-static content-copy" style=""></div></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:4:panelSF" class="row-hb primary start-space-between primary">
+			    <div class="top height-input-width-align-center">
+			      <div class="input-action-with-text">
+			        	<div class="input-text">Living</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:4:divTop" class="input-action">
+			        		<span class="fa fa-minus circle action-minus-step" aria-hidden="true"></span>
+			            <span class="cant action action-min">0</span><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:4:plusSF" href="#" style="color:black;" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5');return false">
+							<span class="fa fa-plus circle action-plus-step" aria-hidden="true"></span></a></div>
+			      </div>
+			    </div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:4:divWL" class="bottom width-static content-copy" style=""></div></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:5:panelSF" class="row-hb primary start-space-between primary">
+			    <div class="top height-input-width-align-center">
+			      <div class="input-action-with-text">
+			        	<div class="input-text">Dining</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:5:divTop" class="input-action">
+			        		<span class="fa fa-minus circle action-minus-step" aria-hidden="true"></span>
+			            <span class="cant action action-min">0</span><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:5:plusSF" href="#" style="color:black;" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5');return false">
+							<span class="fa fa-plus circle action-plus-step" aria-hidden="true"></span></a></div>
+			      </div>
+			    </div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:5:divWL" class="bottom width-static content-copy" style=""></div></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:6:panelSF" class="row-hb primary start-space-between primary">
+			    <div class="top height-input-width-align-center">
+			      <div class="input-action-with-text">
+			        	<div class="input-text">Garage spaces</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:6:divTop" class="input-action">
+			        		<span class="fa fa-minus circle action-minus-step" aria-hidden="true"></span>
+			            <span class="cant action action-min">0</span><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:6:plusSF" href="#" style="color:black;" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5');return false">
+							<span class="fa fa-plus circle action-plus-step" aria-hidden="true"></span></a></div>
+			      </div>
+			    </div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupSF:6:divWL" class="bottom width-static content-copy" style=""></div></div>
 			<div class="input-action-with-text"><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:otherSF" href="#" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step5');return false" class="link-homboo add-other">+ Add other</a>
 			</div>			
 			<script>
@@ -2033,13 +2135,52 @@ Policy will be deemed the final and integrated agreement between you and
 			</script></div>		
         </div>
         <div class="setup-content" id="step-6" style="display: none;">
-			<div class="title-subsection">Materials</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step6"></div>
+			<div class="title-subsection">Materials</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step6">
+		        <div class="input" style="width:50%">
+		          <label>Facade</label>
+		        </div>
+				        <div class="input-with-qty other-facade other-copy-facade marginBottom10">
+				          <div class="form-group input" style="width:50%"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupMaterials:0:groupMatItems:0:mat" type="text" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupMaterials:0:groupMatItems:0:mat" autocomplete="off" class="form-control" title="Name" placeholder="* Name" required="required">
+				          </div>
+				          <div style="display: flex;">
+					        		<a class="close remove-item-min">×</a>					          
+				          </div>
+				        </div>
+				<div class="input-action-with-text" style="padding-bottom: 15px;"><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupMaterials:0:otherMat" href="#" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step6','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step6');return false" class="link-homboo add-other">+ Add other</a>
+				</div>
+		        <div class="input" style="width:50%">
+		          <label>Roofing</label>
+		        </div>
+				        <div class="input-with-qty other-facade other-copy-facade marginBottom10">
+				          <div class="form-group input" style="width:50%"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupMaterials:1:groupMatItems:1:mat" type="text" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupMaterials:1:groupMatItems:1:mat" autocomplete="off" class="form-control" title="Name" placeholder="* Name" required="required">
+				          </div>
+				          <div style="display: flex;">
+					        		<a class="close remove-item-min">×</a>					          
+				          </div>
+				        </div>
+				<div class="input-action-with-text" style="padding-bottom: 15px;"><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:groupMaterials:1:otherMat" href="#" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step6','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step6');return false" class="link-homboo add-other">+ Add other</a>
+				</div></div>
         </div>
         <div class="setup-content" id="step-7" style="display: none;">
 			<div class="title-subsection">Structure</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step7">			
-		       <div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:structuralSystem">Main Structural System</label><div class="btn-group bootstrap-select form-control dropdownHB"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:structuralSystem" title="* Select Structural System"><span class="filter-option pull-left">* Select Structural System</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"></ul></div><select id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:structuralSystem" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:structuralSystem" class="selectpicker form-control dropdownHB" size="1" title="* Select Structural System" required="required" tabindex="-98"><option class="bs-title-option" value="" selected="selected">* Select Structural System</option></select></div> 
+		       <div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:structuralSystem">Main Structural System</label><div class="btn-group bootstrap-select form-control dropdownHB"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:structuralSystem" title="* Select Structural System"><span class="filter-option pull-left">* Select Structural System</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Light wood framing</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Light gauge Steel Framing</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Steel framing</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Concrete</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Heavy timber</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Masonry</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:structuralSystem" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:structuralSystem" class="selectpicker form-control dropdownHB" size="1" title="* Select Structural System" required="required" tabindex="-98"><option class="bs-title-option" value="" selected="selected">* Select Structural System</option>	<option value="LWF">Light wood framing</option>
+	<option value="LGS">Light gauge Steel Framing</option>
+	<option value="SF">Steel framing</option>
+	<option value="CON">Concrete</option>
+	<option value="HT">Heavy timber</option>
+	<option value="MAN">Masonry</option>
+</select></div> 
 		        </div>
-			  <div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:foundationType">Foundation System</label><div class="btn-group bootstrap-select form-control dropdownHB"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:foundationType" title="* Select Foundation System"><span class="filter-option pull-left">* Select Foundation System</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"></ul></div><select id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:foundationType" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:foundationType" class="selectpicker form-control dropdownHB" size="1" title="* Select Foundation System" required="required" tabindex="-98"><option class="bs-title-option" value="" selected="selected">* Select Foundation System</option></select></div> 
+			  <div class="form-group input"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:foundationType">Foundation System</label><div class="btn-group bootstrap-select form-control dropdownHB"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:foundationType" title="* Select Foundation System"><span class="filter-option pull-left">* Select Foundation System</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Block</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Crawl Space</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Daylight Basement</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Finished Basement</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Finished Walkout Basement</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Pier/Piling</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Concrete Floor Slab</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Unfinished Basement</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Unfinished Walkout Basement</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:foundationType" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:foundationType" class="selectpicker form-control dropdownHB" size="1" title="* Select Foundation System" required="required" tabindex="-98"><option class="bs-title-option" value="" selected="selected">* Select Foundation System</option>	<option value="BL">Block</option>
+	<option value="CS">Crawl Space</option>
+	<option value="DB">Daylight Basement</option>
+	<option value="FB">Finished Basement</option>
+	<option value="FW">Finished Walkout Basement</option>
+	<option value="PP">Pier/Piling</option>
+	<option value="CON">Concrete Floor Slab</option>
+	<option value="UB">Unfinished Basement</option>
+	<option value="UW">Unfinished Walkout Basement</option>
+</select></div> 
 			  </div></div>        
         </div>
         <div class="setup-content" id="step-8" style="display: none;">
@@ -2066,8 +2207,8 @@ section of the project's detail. After all images are uploaded and shown
 main view of the house. NOTE: Videos-animations must be in MP4 format 
 with 60 FPS.</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step9">
 	            <div class="upload-file marginBottom10">
-		            <div class="upload-file-child" style="text-align: left;"><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:uploadGallery" class="ui-fileupload ui-widget ui-fileupload-responsive"><div class="ui-fileupload-buttonbar ui-widget-header ui-corner-top"><span class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-fileupload-choose" tabindex="0" role="button" aria-labelledby="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:uploadGallery_label"><span class="ui-button-icon-left ui-icon ui-c ui-icon-plusthick"></span><span id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:uploadGallery_label" class="ui-button-text ui-c">Upload</span><input type="file" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:uploadGallery_input" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:uploadGallery_input" tabindex="-1" aria-hidden="true" multiple="multiple" accept="image/*,video/mp4"></span></div><div class="ui-fileupload-content ui-widget-content ui-corner-bottom"><div class="ui-messages ui-widget ui-helper-hidden ui-fileupload-messages"><div class="ui-messages-error ui-corner-all"><a class="ui-messages-close" href="#"><span class="ui-icon ui-icon-close"></span></a><span class="ui-messages-error-icon"></span><ul></ul></div></div><div class="ui-fileupload-files"><div></div></div></div></div><script id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt476" type="text/javascript">updateGallery = function() {return PrimeFaces.ab({s:"_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt476",f:"_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm",p:"_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt476",u:"_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:panelGalleryList",onco:function(xhr,status,args,data){PF('buiUploadGallery').hide();;},pa:arguments[0]});}</script>
-	                </div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:panelGalleryList" class="result-upload-file upload-file-child " style="position: relative;" aria-busy="false"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:validateChkGallery" type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:validateChkGallery" required="required"><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt478_blocker" class="ui-blockui ui-widget-overlay ui-helper-hidden"></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt478" class="ui-blockui-content ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow">
+		            <div class="upload-file-child" style="text-align: left;"><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:uploadGallery" class="ui-fileupload ui-widget ui-fileupload-responsive"><div class="ui-fileupload-buttonbar ui-widget-header ui-corner-top"><span class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-fileupload-choose" tabindex="0" role="button" aria-labelledby="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:uploadGallery_label"><span class="ui-button-icon-left ui-icon ui-c ui-icon-plusthick"></span><span id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:uploadGallery_label" class="ui-button-text ui-c">Upload</span><input type="file" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:uploadGallery_input" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:uploadGallery_input" tabindex="-1" aria-hidden="true" multiple="multiple" accept="image/*,video/mp4"></span></div><div class="ui-fileupload-content ui-widget-content ui-corner-bottom"><div class="ui-messages ui-widget ui-helper-hidden ui-fileupload-messages"><div class="ui-messages-error ui-corner-all"><a class="ui-messages-close" href="#"><span class="ui-icon ui-icon-close"></span></a><span class="ui-messages-error-icon"></span><ul></ul></div></div><div class="ui-fileupload-files"><div></div></div></div></div>
+	                </div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:panelGalleryList" class="result-upload-file upload-file-child " style="position: relative;" aria-busy="false"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:validateChkGallery" type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:validateChkGallery" required="required"><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt375_blocker" class="ui-blockui ui-widget-overlay ui-helper-hidden"></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt375" class="ui-blockui-content ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow">
 				         	<i class="pi pi-spin pi-spinner" style="font-size: 3rem"></i></div></div>
 		        </div>
 			<script>
@@ -2084,12 +2225,131 @@ with 60 FPS.</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm
 			  <br><br>
 			  Select all the items included in this house plan set
 			</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step10" class="panel-body table-responsive">
-			    <table width="100%" class="HBtable-rowspan"> 	      
+			    <table width="100%" class="HBtable-rowspan">
+					      <tbody>
+					        <tr>
+					          <th style="min-width: 175px;">
+					            <div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_0" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_0" onclick="mojarra.ab(this,event,'valueChange',0,'@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step10')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_0"><span></span> <strong>Floor Plans</strong></label>
+					            </div>
+					          </th>
+					          <th style="text-align: left;">
+					            All floor plans are scaled and indicate the location of
+ wall frame support members, door - windows schedule, plumbing fixtures,
+ cabinet locations, and general notes.
+					          </th>
+					        </tr>
+					      </tbody>
+					      <tbody>
+					        <tr>
+					          <th style="min-width: 175px;">
+					            <div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_1" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_1" onclick="mojarra.ab(this,event,'valueChange',0,'@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step10')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_1"><span></span> <strong>Exterior Elevations</strong></label>
+					            </div>
+					          </th>
+					          <th style="text-align: left;">
+					            All elevations are scaled, showing the overall 
+configuration of the home at each side view, heights, roof overhangs, 
+window header heights, roof pitches, materials used.
+					          </th>
+					        </tr>
+					      </tbody>
+					      <tbody>
+					        <tr>
+					          <th style="min-width: 175px;">
+					            <div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_2" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_2" onclick="mojarra.ab(this,event,'valueChange',0,'@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step10')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_2"><span></span> <strong>Building Sections</strong></label>
+					            </div>
+					          </th>
+					          <th style="text-align: left;">
+					            Some sections of the house are included - they have the
+ intention to show some details not provided on elevations. Such as, for
+ example, volumetric/height conditions/openings. Your 
+builder/contractor/subcontractors might need new sections to obtain more
+ detailed information not shown here.
+					          </th>
+					        </tr>
+					      </tbody>
+					      <tbody>
+					        <tr>
+					          <th style="min-width: 175px;">
+					            <div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_3" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_3" onclick="mojarra.ab(this,event,'valueChange',0,'@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step10')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_3"><span></span> <strong>Cabinets Elevations</strong></label>
+					            </div>
+					          </th>
+					          <th style="text-align: left;">
+					            This plan set may / may not include some elevations 
+suggesting possible design configuration of cabinets, heights, widths, 
+type of components used, cabinet material and finish, counter surfaces, 
+and appliances.
+					          </th>
+					        </tr>
+					      </tbody>
+					      <tbody>
+					        <tr>
+					          <th style="min-width: 175px;">
+					            <div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_4" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_4" onclick="mojarra.ab(this,event,'valueChange',0,'@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step10')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_4"><span></span> <strong>Framing Plans</strong></label>
+					            </div>
+					          </th>
+					          <th style="text-align: left;">
+					            Scale framing plans indicating distribution, size, and 
+spacing of members and bracing and blocking required for structural 
+purposes. Local codes will most likely need approval.
+					          </th>
+					        </tr>
+					      </tbody>
+					      <tbody>
+					        <tr>
+					          <th style="min-width: 175px;">
+					            <div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_5" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_5" onclick="mojarra.ab(this,event,'valueChange',0,'@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step10')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_5"><span></span> <strong>Foundation Plans</strong></label>
+					            </div>
+					          </th>
+					          <th style="text-align: left;">
+					            Scale foundation plans may / may not indicate the 
+location of structural walls, grade beams, reinforcing steel, and 
+structural columns. Again, consulting a local engineer is advisable to 
+obtain an on-site soil analysis and conditions.
+					          </th>
+					        </tr>
+					      </tbody>
+					      <tbody>
+					        <tr>
+					          <th style="min-width: 175px;">
+					            <div class="input-action-with-text marginBottom10 marginRight10"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_6" type="checkbox" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_6" onclick="mojarra.ab(this,event,'valueChange',0,'@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step10')"><label for="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:include_6"><span></span> <strong>Electrical Plans</strong></label>
+					            </div>
+					          </th>
+					          <th style="text-align: left;">
+					            Scale schematic plans indicating the location and types
+ of electrical fixtures, switches, outlets, and how they are switched. 
+Plans do not include circuiting or wire sizing, specialty items such as 
+hose bibbs, gas connections, location of a/c equipment, return air 
+vents, or other mechanical/electrical/plumbing items.
+					          </th>
+					        </tr>
+					      </tbody> 	      
 			    </table><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:validateChkIncluded" type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:validateChkIncluded" required="required"></div>		
         </div>        
         <div class="setup-content" id="step-11" style="display: none;">
 			<div class="title-subsection">Project Documents List</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step11" class="data-table">
 				<div class="title">Construction Plan Set</div>
+				<div class="row-hb primary">
+					<div class="top row-hb-min">
+						<div class="cell-separate content-xsm">A</div>
+						<div class="cell-separate content-sm">
+							<div class="input"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:docList:0:sheetNum" type="text" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:docList:0:sheetNum" autocomplete="off" class="form-control" title="Sheet num" placeholder="* #" required="required">							
+							</div>
+						</div>
+						<div class="cell-separate content-md">
+							<div class="input"><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:docList:0:sheetName" type="text" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:docList:0:sheetName" autocomplete="off" class="form-control" title="Sheet name" placeholder="* Sheet name" required="required">
+							</div>
+						</div>
+					</div>
+					<div class="bottom row-hb-min">
+						<div class="content-lg">
+							<div class="input"><textarea id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:docList:0:sheetDescription" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:docList:0:sheetDescription" class="form-control desc" title="Sheet Description" placeholder=" Sheet Description "></textarea>		
+							</div>
+						</div>
+					</div>
+					<div class="option-float">
+			        		<a class="close remove-item-min">×</a>					
+					</div>
+				</div>
 				<div class="input-action-with-text" style="padding-bottom: 15px;"><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:otherDocList" href="#" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step11','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step11');return false" class="link-homboo add-other-sheet-a">+ Add sheet</a>
 				</div></div>		
         </div>
@@ -2161,16 +2421,7 @@ of the different Drawing sets.</div><div id="_ProfilePortlet_WAR_HombooPortlets_
 					</div>
 					<div class="width-static">
 						<div class="fontBold" style="text-align:center">No additional cost</div>
-						<!-- &lt;div class="fontBold" style="text-align:center"&gt;&lt;/div&gt;
-						&lt;div class="bottom row-hb-min"&gt;
-							&lt;div class="cell-separate"&gt;$&lt;/div&gt;
-							&lt;div class="input"&gt;
-			                     &lt;h:inputText readonly="true" id="priceMultipleLicense" autocomplete="off" pr:required="required" title="Price Unlimited use" styleClass="form-control price-mask" value="" pr:placeholder="* 0.00"&gt;
-							   	 	 &lt;f:validator validatorId="validatorRequiredHomboo" /&gt;
-							   	 	 &lt;f:convertNumber type="number" minFractionDigits="2"/&gt;
-							   	 &lt;/h:inputText&gt;							
-							&lt;/div&gt;
-						&lt;/div&gt;-->						
+												
 					</div>
 				</div>
 			</div>
@@ -2180,7 +2431,7 @@ of the different Drawing sets.</div><div id="_ProfilePortlet_WAR_HombooPortlets_
 				});
 			</script></div>			
         </div>			
-        <div class="setup-content" id="step-15" style="display: none;"><script id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt570" type="text/javascript">calcFeeProduct = function() {return PrimeFaces.ab({s:"_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt570",f:"_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm",p:"_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt570 _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step14",u:"_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step15",pa:arguments[0]});}</script>
+        <div class="setup-content" id="step-15" style="display: none;">
 			  <div class="title-subsection">House Design plan Set Price</div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:step15">
 			  <div class="data-table">
 				<div class="grid-cuatro-secciones">
@@ -2203,12 +2454,12 @@ of the different Drawing sets.</div><div id="_ProfilePortlet_WAR_HombooPortlets_
 					</div>
 					<div style="text-align: center;" class="top grid-seccion-tres">
 						<div class="cell-separate display-inline-block"></div>
-						<div style="padding: 0px;" class="cell-separate display-inline-block">
+						<div style="padding: 0px;" class="cell-separate display-inline-block">$0.00
 						</div>
 					</div>
 					<div style="text-align: center;" class="top grid-seccion-cuatro">
 						<div class="cell-separate display-inline-block"></div>
-						<div style="padding: 0px;" class="cell-separate display-inline-block">
+						<div style="padding: 0px;" class="cell-separate display-inline-block">$0.00
 						</div>
 					</div>
 				</div>			
@@ -2227,22 +2478,22 @@ of the different Drawing sets.</div><div id="_ProfilePortlet_WAR_HombooPortlets_
 					</div>
 					<div style="text-align: center;" class="top grid-seccion-tres">
 						<div class="cell-separate display-inline-block"></div>
-						<div style="padding: 0px;" class="cell-separate display-inline-block">
+						<div style="padding: 0px;" class="cell-separate display-inline-block">$0.00
 						</div>
 					</div>
 					<div style="text-align: center;" class="top grid-seccion-cuatro">
 						<div class="cell-separate display-inline-block"></div>
-						<div style="padding: 0px;" class="cell-separate display-inline-block">
+						<div style="padding: 0px;" class="cell-separate display-inline-block">$0.00
 						</div>
 					</div>
 				</div></div>
 		</div>	  			
-      </div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:divProductFooter" class="modal-footer">        
+      </div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:divProductFooter" class="modal-footer" style="height: 50px !important;">        
         <div class="modal-corner-option left">
             <button type="button" class="btn btn-homboo-secondary" onclick="$('[id$=saveProduct]').click();">Save</button><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:saveProduct" type="submit" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:saveProduct" value="Save" style="display: none" class="btn btn-homboo-secondary" onclick="mojarra.ab(this,event,'action','@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm','_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:msgProduct _ProfilePortlet_WAR_HombooPortlets_:productsForm',{'onevent':completeAjax});return false">        
         </div>
         <button type="button" class="btn btn-homboo-secondary backBtn" style="display: none">Back</button>
-        <button type="button" class="btn btn-homboo margin nextBtn">Next</button><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:submitProduct" type="submit" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:submitProduct" value="Submit" style="display: none" class="btn btn-homboo margin submitBtn" onclick="jsf.util.chain(this,event,'return checkUploadComplete($(\'[id$=uploadProductForm]\'),event)','mojarra.ab(this,event,\'action\',\'@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm\',\'_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:msgProduct _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:globalValidation _ProfilePortlet_WAR_HombooPortlets_:productsForm\',{\'onevent\':completeAjax})');return false"><span id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:globalValidation"></span><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:stepProduct" type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:stepProduct" required="required" value="1"></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt586_blocker" class="ui-blockui ui-widget-overlay ui-helper-hidden"></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt586" class="ui-blockui-content ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow">
+        <button type="button" class="btn btn-homboo margin nextBtn">Next</button><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:submitProduct" type="submit" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:submitProduct" value="Submit" style="display: none" class="btn btn-homboo margin submitBtn" onclick="jsf.util.chain(this,event,'return checkUploadComplete($(\'[id$=uploadProductForm]\'),event)','mojarra.ab(this,event,\'action\',\'@this _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm\',\'_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:msgProduct _ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:globalValidation _ProfilePortlet_WAR_HombooPortlets_:productsForm\',{\'onevent\':completeAjax})');return false"><span id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:globalValidation"></span><input id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:stepProduct" type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:stepProduct" value="1" required="required"></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt483_blocker" class="ui-blockui ui-widget-overlay ui-helper-hidden"></div><div id="_ProfilePortlet_WAR_HombooPortlets_:uploadProductForm:j_idt483" class="ui-blockui-content ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow">
          	<i class="pi pi-spin pi-spinner" style="font-size: 3rem"></i></div></div>
   </div>
 	<script>
@@ -2250,12 +2501,12 @@ of the different Drawing sets.</div><div id="_ProfilePortlet_WAR_HombooPortlets_
 			dropDownHB();
 			formUploadModal($('[id$=msgProduct]'), $('[id$=stepProduct]'), "15");   
 		});
-	</script><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:9" value="-5515167390973544451:-3706331193422228980" autocomplete="off">
-</form>	 
+	</script>
+<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="3058580939422643321:1040899237243602538" autocomplete="off"></form>	 
 </div>
 
 <div id="divProducts" class="col-md-12" style="padding:0px;">
-<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:productsForm" name="_ProfilePortlet_WAR_HombooPortlets_:productsForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
+<form data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:productsForm" name="_ProfilePortlet_WAR_HombooPortlets_:productsForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="_ProfilePortlet_WAR_HombooPortlets_:productsForm" value="_ProfilePortlet_WAR_HombooPortlets_:productsForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=ProfilePortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_ProfilePortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_ProfilePortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Fprofile%2Fview.xhtml">
 
@@ -2295,7 +2546,7 @@ the Department of Housing and Urban Development (HUD).
           </div>
 <div class="panel-profile center architect_profile">
       <div class="panel-title-profile title-option">
-        <div class="title-option-1"><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:productsForm:openterms" href="#" onclick="mojarra.ab(this,event,'action','@this','termsForm');return false" class="panel_newproject" data-target="#termArchitect" data-toggle="modal">
+        <div class="title-option-1"><a data-senna-off="true" id="_ProfilePortlet_WAR_HombooPortlets_:productsForm:openterms" href="#" onclick="mojarra.ab(this,event,'action','@this','termsForm');return false" class="panel_newproject" data-target="#termArchitect" data-toggle="modal" name="_ProfilePortlet_WAR_HombooPortlets_:productsForm:openterms">
 					<p>+ Add new project</p></a>          
         </div><div id="_ProfilePortlet_WAR_HombooPortlets_:productsForm:divPaginatorTop" class="title-option-2">	
 	
@@ -2480,7 +2731,7 @@ contemporary/ industrial house design and a unique lifestyle.
 			    visualPaginator_grid(".grid-nx2-action", ".grid-homboo-action", ".active", ".grid-homboo", [".grid-homboo-nx2", ".grid-responsive"]);
 			    visualPaginator_grid(".grid-nx3-action", ".grid-homboo-action", ".active", ".grid-homboo", [".grid-homboo-nx3", ".grid-responsive"]);
 			});
-		</script><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:10" value="-5515167390973544451:-3706331193422228980" autocomplete="off">
+		</script><input type="hidden" name="javax.faces.ViewState" id="_ProfilePortlet_WAR_HombooPortlets_:javax.faces.ViewState:10" value="3058580939422643321:1040899237243602538" autocomplete="off">
 </form> 
 		<script>
 		    function gridPaginator(claseObjetoPrincipal, claseEstiloSeleccionado, claseElementoActivo) {
@@ -2857,12 +3108,12 @@ contemporary/ industrial house design and a unique lifestyle.
 	   }); 
    
 	</script>
-<form data-senna-off="true" id="_FooterPortlet_WAR_HombooPortlets_:footerForm" name="_FooterPortlet_WAR_HombooPortlets_:footerForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=aOs54XBT&amp;p_p_id=FooterPortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=&amp;p_p_col_count=0&amp;_FooterPortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Ffooter%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
+<form data-senna-off="true" id="_FooterPortlet_WAR_HombooPortlets_:footerForm" name="_FooterPortlet_WAR_HombooPortlets_:footerForm" method="post" action="https://dev.homboo.com/myhomboo/profile?p_auth=I7EeIcPn&amp;p_p_id=FooterPortlet_WAR_HombooPortlets&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=&amp;p_p_col_count=0&amp;_FooterPortlet_WAR_HombooPortlets__facesViewIdRender=%2FWEB-INF%2Fviews%2Ffooter%2Fview.xhtml" enctype="application/x-www-form-urlencoded">
 <input type="hidden" name="_FooterPortlet_WAR_HombooPortlets_:footerForm" value="_FooterPortlet_WAR_HombooPortlets_:footerForm">
 <input type="hidden" name="javax.faces.encodedURL" value="https://dev.homboo.com/myhomboo/profile?p_p_id=FooterPortlet_WAR_HombooPortlets&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=&amp;p_p_col_count=0&amp;_FooterPortlet_WAR_HombooPortlets__jsfBridgeAjax=true&amp;_FooterPortlet_WAR_HombooPortlets__facesViewIdResource=%2FWEB-INF%2Fviews%2Ffooter%2Fview.xhtml">
 
 			  <!-- Modal BLOCK PAGE AJAX -->
-			  <div id="blockPageModal" class="modal fade" role="dialog" style="z-index: 1040; display: none;">
+			  <div id="blockPageModal" class="modal fade" role="dialog" style="z-index: 1050; display: none;">
 			    <div class="modal-dialog">
 			    	<div class="loader"></div>      
 			    </div>
@@ -2878,10 +3129,10 @@ contemporary/ industrial house design and a unique lifestyle.
 			<div id="blockPageErrorAjax" class="modal messageModal fade" role="dialog" data-backdrop="static" data-keyboard="false" style="z-index:1060 !important;">
 			  <div class="modal-dialog">
 			    <!-- Modal content-->    
-			    <div class="modal-content">
-			      <div class="modal-header">
+			    <div class="modal-content" style="margin-top: -44.8px; margin-bottom: 26.88px;">
+			      <div class="modal-header" style="height: 50px !important;">
 			        <div class="modal-title">Attention</div>
-			      </div><div id="_FooterPortlet_WAR_HombooPortlets_:footerForm:divInfo" class="modal-body">
+			      </div><div id="_FooterPortlet_WAR_HombooPortlets_:footerForm:divInfo" class="modal-body" style="height: 682.24px;">
 			        <p id="messageInfo">An error has occurred with your session time and you need to refresh the page</p>
 			        <button class="btn btn-homboo" type="button" onclick="location.reload();">Refresh</button></div>
 			    </div>
@@ -2892,11 +3143,11 @@ contemporary/ industrial house design and a unique lifestyle.
 			<div id="blockSignedInError" class="modal messageModal fade" role="dialog" data-backdrop="static" data-keyboard="false" style="z-index:1060 !important;">
 			  <div class="modal-dialog">
 			    <!-- Modal content-->    
-			    <div class="modal-content">
-			      <div class="modal-header">
+			    <div class="modal-content" style="margin-top: -44.8px; margin-bottom: 26.88px;">
+			      <div class="modal-header" style="height: 50px !important;">
 			        <div class="modal-title">Attention</div>
 			      </div>
-			      <div class="modal-body">
+			      <div class="modal-body" style="height: 682.24px;">
 			        <p id="messageInfo">An error has occurred with your session time and you need to login</p><input id="_FooterPortlet_WAR_HombooPortlets_:footerForm:refreshLogin" type="submit" name="_FooterPortlet_WAR_HombooPortlets_:footerForm:refreshLogin" value="Login" class="btn btn-homboo" onclick="mojarra.ab(this,event,'action','@this',0);return false">				        
 			      </div>
 			    </div>
@@ -2908,17 +3159,17 @@ contemporary/ industrial house design and a unique lifestyle.
 			<div id="modalSignIn" class="modal messageBigModal fade" role="dialog">
 			  <div class="modal-dialog">			
 			    <!-- Modal content-->
-			    <div class="modal-content">
-			      <div class="modal-header">
+			    <div class="modal-content" style="margin-top: -44.8px; margin-bottom: 26.88px;">
+			      <div class="modal-header" style="height: 50px !important;">
 			        <div class="modal-title">Sign in</div>
 			        <button type="button" class="close" data-dismiss="modal">×</button>
 			      </div>
-			      <div class="modal-body">
+			      <div class="modal-body" style="height: 682.24px;">
 			        <p>Sign in to your Homboo account to do this action. If you 
 do not have a homboo account click on the "Sign up" button and create 
 one.</p>			        
 			      </div>
-			      <div class="modal-footer">
+			      <div class="modal-footer" style="height: 50px !important;">
 			        <button type="button" class="btn btn-homboo-secondary" onclick="location.href=document.location.origin + '/signup?saveLastPath=0'">Sign up</button>
 			        <button type="button" class="btn btn-homboo" onclick="location.href=document.location.origin + '/signin?saveLastPath=0'">Sign in</button>
 			      </div>			      
@@ -2999,7 +3250,6 @@ one.</p>
 			<!-- TERMINA FOOTER -->			
 			<script>
 				$(document).ready(function() {
-				   //iniciarModalCookies();
 				   $('#blockPageModal').on('hidden.bs.modal', function () {	
 						setTimeout(function() {
 							   if($('.modal:visible').length > 0){
@@ -3007,25 +3257,12 @@ one.</p>
 							   }
 						 }, 200);
 					});	
-				   function changeHeight() {
-						let valorHeight = window.innerHeight;
-						if ($('.modal:visible').find('.modal-content').length > 0){
-							let modalHeight = $('.modal:visible').find('.modal-content').get(0).offsetHeight;	
-							let modalTop = $('.modal:visible').find('.modal-content').get(0).offsetTop;
-							let diffModal = (modalTop + modalHeight) - valorHeight;
-						    if (diffModal > 0){
-						    	$('.modal:visible').find('.modal-dialog').get(0).style.height = "auto";
-						    	$('.modal:visible').find('.modal-dialog').get(0).style.top = modalTop + "px";
-								$('.modal:visible').find('.modal-content').get(0).style.height = modalHeight - (diffModal + modalTop) + "px"
-							}							
-						}
-				   }
 				   $(document).on('shown.bs.modal', function () {
 					   changeHeight();
 				   }); 
 				   window.addEventListener("resize", changeHeight);
 				});
-			</script><input type="hidden" name="javax.faces.ViewState" id="_FooterPortlet_WAR_HombooPortlets_:javax.faces.ViewState:0" value="225586606742855373:9106517481161725886" autocomplete="off">
+			</script><input type="hidden" name="javax.faces.ViewState" id="_FooterPortlet_WAR_HombooPortlets_:javax.faces.ViewState:0" value="-8391439625070559773:7069309070024514628" autocomplete="off">
 </form></div>
 
 	
@@ -3096,7 +3333,7 @@ one.</p>
 
 
 
-<link rel="stylesheet" id="yui_patched_v3_18_7_1_1717092280176_24" href="ProfileTablet_files/Sin%20t%C3%ADtulo.css"><link class="lfr-css-file" data-senna-track="temporary" href="" id="liferayAUICSS" rel="stylesheet" type="text/css">
+<link rel="stylesheet" id="yui_patched_v3_18_7_1_1717177368078_24" href="ProfileTablet_files/Sin%20t%C3%ADtulo.css"><link class="lfr-css-file" data-senna-track="temporary" href="" id="liferayAUICSS" rel="stylesheet" type="text/css">
 
 
 
@@ -3114,14 +3351,14 @@ one.</p>
 			
 
 			getMajorVersion: function() {
-				return 126.0;
+				return 14.0;
 			},
 
 			getRevision: function() {
-				return '126.0';
+				return '605.1';
 			},
 			getVersion: function() {
-				return '126.0';
+				return '14.0';
 			},
 
 			
@@ -3136,7 +3373,7 @@ one.</p>
 				return false;
 			},
 			isFirefox: function() {
-				return true;
+				return false;
 			},
 			isGecko: function() {
 				return true;
@@ -3145,19 +3382,19 @@ one.</p>
 				return false;
 			},
 			isIphone: function() {
-				return false;
+				return true;
 			},
 			isLinux: function() {
 				return false;
 			},
 			isMac: function() {
-				return false;
+				return true;
 			},
 			isMobile: function() {
-				return false;
+				return true;
 			},
 			isMozilla: function() {
-				return true;
+				return false;
 			},
 			isOpera: function() {
 				return false;
@@ -3166,16 +3403,16 @@ one.</p>
 				return true;
 			},
 			isSafari: function() {
-				return false;
+				return true;
 			},
 			isSun: function() {
 				return false;
 			},
 			isWebKit: function() {
-				return false;
+				return true;
 			},
 			isWindows: function() {
-				return true;
+				return false;
 			}
 		};
 
@@ -3337,10 +3574,10 @@ one.</p>
 				return '392029';
 			},
 			getRemoteAddr: function() {
-				return '201.249.199.202';
+				return '201.249.199.201';
 			},
 			getRemoteHost: function() {
-				return '201.249.199.202';
+				return '201.249.199.201';
 			},
 			getScopeGroupId: function() {
 				return '20119';
@@ -3411,7 +3648,7 @@ one.</p>
 				return true;
 			},
 			getComboPath: function() {
-				return '/combo/?browserId=firefox&minifierType=&languageId=en_US&t=1682443946567&';
+				return '/combo/?browserId=other&minifierType=&languageId=en_US&t=1682443946567&';
 			},
 			getDateFormat: function() {
 				return '%m/%d/%Y';
@@ -3451,11 +3688,11 @@ one.</p>
 				return '/html/portlet';
 			},
 			getStaticResourceURLParams: function() {
-				return '?browserId=firefox&minifierType=&languageId=en_US&t=1682443946567';
+				return '?browserId=other&minifierType=&languageId=en_US&t=1682443946567';
 			}
 		};
 
-		Liferay.authToken = 'aOs54XBT';
+		Liferay.authToken = 'I7EeIcPn';
 
 		
 
@@ -3615,7 +3852,6 @@ $("[id$=footerForm]").append("<div id='timeoutH' class='modal messageModal fade'
 			      }		
 			}
 		);
-		
 </script>
 
 
@@ -3626,4 +3862,4 @@ $("[id$=footerForm]").append("<div id='timeoutH' class='modal messageModal fade'
 		
 	
 
-<div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div><div class="modal-backdrop fade in modal-stack" style="z-index: 1039;"></div></body></html>
+<div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div><div class="modal-backdrop fade in modal-stack" style="z-index: 1059;"></div></body></html>
