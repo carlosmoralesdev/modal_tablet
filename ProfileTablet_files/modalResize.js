@@ -67,7 +67,7 @@ function changeHeight() {
                                     //console.log(" ----- modalDialog: -------- ", elementoInterno.childNodes[1])
                                     let modalContent = elementoInterno.childNodes[1]
                                     if (modalContent) {
-                                        console.log(modalContent)
+                                        //console.log(modalContent)
                                         modalContent.style.marginBottom = "";
                                         modalContent.style.height = "";
                                         modalContent.style.setProperty("max-height", "90vh", "important");
